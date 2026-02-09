@@ -9,6 +9,18 @@ const fadeInUp = {
 };
 
 export default function About() {
+  // Add this function for CV download
+  const handleDownloadCV = () => {
+    // Replace with your actual CV file path in the public folder
+    const cvUrl = '/cv.pdf'; // Make sure to place your CV in the public folder
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Akash_Vishwakarma_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const skills = [
     { name: 'TypeScript', icon: <SiTypescript className="w-6 h-6" />, level: '90%' },
     { name: 'React', icon: <SiReact className="w-6 h-6" />, level: '95%' },
@@ -45,17 +57,17 @@ export default function About() {
             <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto"></div>
           </motion.div>
 
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
             <motion.div 
               variants={fadeInUp}
-              className="lg:w-1/3 relative group"
+              className="lg:w-1/4 relative group"
             >
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
               <div className="relative bg-slate-800 p-1 rounded-2xl">
                 <img 
                   src={profileImage} 
                   alt="Akash" 
-                  className="w-full h-auto rounded-xl object-cover"
+                  className="w-full max-w-xs h-auto rounded-xl object-cover mx-auto"
                 />
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
                   <a href="https://github.com/akash679" target="_blank" rel="noopener noreferrer" 
@@ -113,10 +125,10 @@ export default function About() {
               </div>
 
               <motion.a
-                href="#"
+                onClick={handleDownloadCV}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium rounded-full hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 cursor-pointer"
               >
                 <FaDownload className="mr-2" />
                 Download CV
