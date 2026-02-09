@@ -1,0 +1,106 @@
+[debug] [2026-02-07T13:43:47.406Z] ----------------------------------------------------------------------
+[debug] [2026-02-07T13:43:47.415Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-02-07T13:43:47.416Z] CLI Version:   15.5.1
+[debug] [2026-02-07T13:43:47.416Z] Platform:      win32
+[debug] [2026-02-07T13:43:47.417Z] Node Version:  v22.18.0
+[debug] [2026-02-07T13:43:47.418Z] Time:          Sat Feb 07 2026 19:13:47 GMT+0530 (India Standard Time)
+[debug] [2026-02-07T13:43:47.418Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Downloads\portfolio-website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-07T13:43:58.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-07T13:43:58.893Z] > authorizing via signed-in user (forpractice.edu.in@gmail.com)
+[debug] [2026-02-07T13:43:58.897Z] Checked if tokens are valid: true, expires at: 1770475318349
+[debug] [2026-02-07T13:43:58.897Z] Checked if tokens are valid: true, expires at: 1770475318349
+[debug] [2026-02-07T13:43:58.902Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/akashvishwakarma-portfolio [none]
+[debug] [2026-02-07T13:43:59.529Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/akashvishwakarma-portfolio 200
+[debug] [2026-02-07T13:43:59.529Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/akashvishwakarma-portfolio {"projectId":"akashvishwakarma-portfolio","projectNumber":"548441486754","displayName":"akashvishwakarma-portfolio","name":"projects/akashvishwakarma-portfolio","resources":{"hostingSite":"akashvishwakarma-portfolio"},"state":"ACTIVE","etag":"1_b6d6a777-8656-44c8-9853-9be493817c00"}
+[info] i  Using project akashvishwakarma-portfolio (akashvishwakarma-portfolio) . 
+[info] 
+=== Hosting Setup
+[debug] [2026-02-07T13:43:59.555Z] Checked if tokens are valid: true, expires at: 1770475318349
+[debug] [2026-02-07T13:43:59.555Z] Checked if tokens are valid: true, expires at: 1770475318349
+[debug] [2026-02-07T13:43:59.555Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/akashvishwakarma-portfolio [none]
+[debug] [2026-02-07T13:43:59.891Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/akashvishwakarma-portfolio 200
+[debug] [2026-02-07T13:43:59.891Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/akashvishwakarma-portfolio {"projectId":"akashvishwakarma-portfolio","projectNumber":"548441486754","displayName":"akashvishwakarma-portfolio","name":"projects/akashvishwakarma-portfolio","resources":{"hostingSite":"akashvishwakarma-portfolio"},"state":"ACTIVE","etag":"1_b6d6a777-8656-44c8-9853-9be493817c00"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Admin\Downloads\portfolio-website is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1064478903&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2026-02-07T13:44:29.755Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2026-02-07T13:44:29.756Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2026-02-07T13:44:31.044Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2026-02-07T13:44:31.045Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2026-02-07T13:44:31.055Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2026-02-07T13:44:31.617Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2026-02-07T13:44:31.618Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"AkashVishwakarma009","id":237008074,"node_id":"U_kgDODiB0yg","avatar_url":"https://avatars.githubusercontent.com/u/237008074?v=4","gravatar_id":"","url":"https://api.github.com/users/AkashVishwakarma009","html_url":"https://github.com/AkashVishwakarma009","followers_url":"https://api.github.com/users/AkashVishwakarma009/followers","following_url":"https://api.github.com/users/AkashVishwakarma009/following{/other_user}","gists_url":"https://api.github.com/users/AkashVishwakarma009/gists{/gist_id}","starred_url":"https://api.github.com/users/AkashVishwakarma009/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AkashVishwakarma009/subscriptions","organizations_url":"https://api.github.com/users/AkashVishwakarma009/orgs","repos_url":"https://api.github.com/users/AkashVishwakarma009/repos","events_url":"https://api.github.com/users/AkashVishwakarma009/events{/privacy}","received_events_url":"https://api.github.com/users/AkashVishwakarma009/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2025-10-09T09:48:47Z","updated_at":"2025-12-26T07:12:46Z","private_gists":0,"total_private_repos":4,"owned_private_repos":4,"disk_usage":165533,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as AkashVishwakarma009 
+[info] 
+[debug] [2026-02-07T13:44:47.036Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2026-02-07T13:44:47.446Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2026-02-07T13:44:47.446Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2026-02-07T13:44:49.508Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2026-02-07T13:44:49.907Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2026-02-07T13:44:49.908Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2026-02-07T13:44:51.109Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2026-02-07T13:44:51.503Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2026-02-07T13:44:51.504Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2026-02-07T13:44:59.730Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:518:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1132:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:271:20)
+    at ReadStream.emit (node:events:530:35)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+[error] 
+[error] Error: An unexpected error has occurred.
